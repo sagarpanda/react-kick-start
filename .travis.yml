@@ -1,0 +1,19 @@
+language: node_js
+node_js:
+  - "6"
+script:
+  - console.log(${TRAVIS_BUILD_NUMBER})
+  - npm run lint
+  - npm run build
+#before_deploy:
+#  - npm version "0.${TRAVIS_BUILD_NUMBER}.0"
+#  - git config user.email ${GIT_EMAIL}
+#  - git config user.name ${GIT_USERID}
+#  - git push "https://${GIT_TOKEN}@github.com/${GIT_USERID}/react-kick-start.git" master
+deploy:
+  provider: npm
+  skip_cleanup: true
+  email: $EMAIL_ADDRESS
+  api_key: $NPM_TOKEN
+  on:
+    branch: master

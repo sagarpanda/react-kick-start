@@ -1,0 +1,38 @@
+{
+  "name": "react-kick-start",
+  "version": "0.0.1",
+  "description": "Kick start react application with Webpack v2.0",
+  "main": "lib/webpack.config.js",
+  "dependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-loader": "^7.1.0",
+    "babel-plugin-lodash": "^3.3.4",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-imports": "^1.5.1",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^1.0.1",
+    "eslint": "^4.19.1",
+    "extract-text-webpack-plugin": "^2.1.2",
+    "html-webpack-plugin": "^3.2.0",
+    "lodash": "^4.17.4",
+    "style-loader": "^0.23.1",
+    "url-loader": "^1.1.2",
+    "webpack": "^2.2.0",
+    "webpack-bundle-analyzer": "^3.0.3",
+    "webpack-dev-server": "2.9.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "babel src --watch --out-dir lib --copy-files",
+    "build": "babel src --out-dir lib --compact --minified  --copy-files",
+    "lint": "eslint src/**/*.js{,x}"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sagarpanda/react-kick-start.git"
+  },
+  "author": "Sagar Panda<er.sagarpanda@gmail.com>",
+  "license": "ISC"
+}
