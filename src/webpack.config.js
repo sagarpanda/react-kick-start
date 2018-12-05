@@ -166,6 +166,9 @@ const webpackConfig = (options) => {
     },
     plugins: getPlugins(),
     resolve: {
+      alias: {
+        appRoot: path.resolve(APP_DIR),
+      },
       extensions: ['.js', '.jsx']
     }
   };
