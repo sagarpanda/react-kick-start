@@ -1,6 +1,6 @@
 {
   "name": "react-qstart",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Quick start react application with Webpack v2.0",
   "main": "lib/webpack.config.js",
   "dependencies": {
