@@ -1,4 +1,5 @@
 # Quick start react application with Webpack v2.0
+[![Build Status](https://travis-ci.org/sagarpanda/react-qstart.svg?branch=master)](https://travis-ci.org/sagarpanda/react-qstart)
 
 ### Configured Features
 
